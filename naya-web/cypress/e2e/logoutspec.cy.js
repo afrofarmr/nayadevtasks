@@ -7,6 +7,7 @@ describe('Naya Login Page', () => {
     cy.login()
 
     cy.get('.col > .login-button').click()
+    cy.get(':nth-child(2) > .col-md-6').should('contains.text', 'Login')
 
   });
 });

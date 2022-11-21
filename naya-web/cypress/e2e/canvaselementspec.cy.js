@@ -12,8 +12,10 @@ describe('View Project', () => {
     cy.get('select').select('circle')
     cy.get('select').should('have.value', 'circle')
 
-    cy.get('[label="Text"]').type('proper communication is priority')
+    cy.get('[label="Text"]').type('proper')
     cy.get('[color="primary"]').click()
+
+    cy.get(':nth-child(3) > :nth-child(2) > .btn').contains('Save').click({force:true})
     
 
   });

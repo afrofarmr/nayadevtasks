@@ -11,7 +11,7 @@ describe('Create Project', () => {
     cy.get(':nth-child(1) > .form-control').type('createnaya')
 
     cy.get(':nth-child(3) > :nth-child(2) > .btn').click()
-    cy.get(':nth-child(5) > .card > .row > .col-sm-6 > div').should('contains.text', 'Username')
+    cy.get(':nth-child(5) > .card > .row > .col-sm-6 > div').should('contains.text', 'createnaya')
 
   });
 });
